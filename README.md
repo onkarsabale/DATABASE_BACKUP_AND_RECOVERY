@@ -28,3 +28,9 @@
     - Differential Backup	:- Saves changes since the last full backup.
     - Logical Backup	:- SQL statements (like mysqldump)
     - Physical Backup	:- Binary copies of database files (done at file system level)
+
+4) Command for Database Backup and Recovery in MySQL:
+        - Backup (using mysqldump)
+                                    **"mysqldump -u [username] -p [database_name] > backup.sql"**
+        - Restore
+                    **"mysql -u [username] -p [database_name] < backup.sql"**
